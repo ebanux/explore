@@ -53,3 +53,26 @@ body {
     grid-gap: 25px;
     justify-items: center;
 }
+
+.tag-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tag-filter {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tag-filter:hover {
+    background-color: #d4d4d4;
+}
+
+.tag-filter.active {
+    background-color: #b3b3b3;
+}
