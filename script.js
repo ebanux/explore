@@ -218,12 +218,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             image.addEventListener("mouseenter", function () {
                 image.classList.add("blur");
-                // imageLink.style.visibility = "visible";
             });
 
             image.addEventListener("mouseleave", function () {
                 image.classList.remove("blur");
-                // imageLink.style.visibility = "hidden";
             });
 
             const linkContainer = document.createElement("div");
