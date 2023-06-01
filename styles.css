@@ -46,6 +46,16 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Apply the lighting effect */
+.iphone-image.lighting {
+    /* overflow: hidden; */
+    filter: brightness(1.2);
+    box-shadow: rgb(61, 24, 222) 0px 3px 5px;
+    background-color: rgba(0, 0, 255, 0.3);
+    mix-blend-mode: screen;
+    z-index: 1;
+}
+
 /* Grid container */
 .grid-container {
     display: grid;
@@ -75,10 +85,6 @@ body {
 
 .tag-filter.active {
     background-color: #b3b3b3;
-}
-
-.iphone-image.blur {
-    filter: blur(4px);
 }
 
 .iphone-container:hover .image-overlay {

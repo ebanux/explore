@@ -217,11 +217,11 @@ document.addEventListener("DOMContentLoaded", function () {
             image.alt = "iPhone Image";
 
             image.addEventListener("mouseenter", function () {
-                image.classList.add("blur");
+                image.classList.add("lighting");
             });
 
             image.addEventListener("mouseleave", function () {
-                image.classList.remove("blur");
+                image.classList.remove("lighting");
             });
 
             const linkContainer = document.createElement("div");
