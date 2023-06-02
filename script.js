@@ -208,6 +208,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const imageContainer = document.createElement("div");
             imageContainer.classList.add("image-container");
 
+            iphoneContainer.addEventListener("mouseenter", function () {
+                iphoneContainer.classList.add("glosh");
+            });
+
+            iphoneContainer.addEventListener("mouseleave", function () {
+                iphoneContainer.classList.remove("glosh");
+            });
+
             const imageLink = document.createElement("a");
             imageLink.href = item.link;
 
