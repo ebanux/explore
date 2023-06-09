@@ -1,258 +1,255 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Array of image URLsconst items = [
-    const items = [
+document.addEventListener('DOMContentLoaded', function () {
+    // Player data array
+    const players = [
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-businessWatch.png",
-            tags: ["Link-in-bio", "Social Networks", "Business"],
-            link: "https://example.com/item1"
+            name: "Andrea",
+            last_name: "Culberson",
+            email: "andyculberson@me.com",
+            year_of_birth: 1946,
+            level: "Beginner",
+            park: "Weston Regional Park"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioGirl&Bike.png",
-            tags: ["Link-in-bio", "Social Networks", "Empowered Woman"],
-            link: "https://example.com/item2"
+            name: "Andrea",
+            last_name: "Chico",
+            email: "andchico@yahoo.com",
+            year_of_birth: 1993,
+            level: "Beginner",
+            park: "Weston Regional Park"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-eventTech.png",
-            tags: ["Event", "Smart Label"],
-            link: "https://example.com/item3"
+            name: "Ari",
+            last_name: "Pe",
+            email: "makeithappen2023@hotmail.com",
+            year_of_birth: 1982,
+            level: "Beginner",
+            park: "Need Suggestions"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-customPhotoBusiness.png",
-            tags: ["tag2", "tag4"],
-            link: "https://example.com/item4"
+            name: "Arleen",
+            last_name: "Rodriguez",
+            email: "trumpcondo@aol.com",
+            year_of_birth: 1975,
+            level: "Beginner",
+            park: "Need Suggestions"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-donationLove&Colors.png",
-            tags: ["tag3", "tag5"],
-            link: "https://example.com/item1"
+            name: "Arturo",
+            last_name: "Garzon",
+            email: "arturo2009futbol@hotmail.com",
+            year_of_birth: 1965,
+            level: "Beginner",
+            park: "Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-smartLabelMuseum.png",
-            tags: ["Business", "Gallery", "Multimedia", "Art & Design"],
-            link: "https://example.com/item6"
+            name: "Cesar",
+            last_name: "Sanchez",
+            email: "cecisam1@hotmail.com",
+            year_of_birth: 1972,
+            level: "Beginner",
+            park: "Weston Regional Park, Markham Park, Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-petIdCooper.png",
-            tags: ["tag2", "tag3"],
-            link: "https://example.com/item7"
+            name: "Miguel",
+            last_name: "Sancho",
+            email: "sanchojaf",
+            year_of_birth: 1980,
+            level: "Advanced",
+            park: "Weston Regional Park, Markham Park, Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-donationLittleSteps.png",
-            tags: ["tag5", "tag3"],
-            link: "https://example.com/item1"
+            name: "Andrea",
+            last_name: "Culberson",
+            email: "andyculberson@me.com",
+            year_of_birth: 1946,
+            level: "Beginner",
+            park: "Weston Regional Park"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-petIdSpike.png",
-            tags: ["Pet Tag ID", "Social Networks"],
-            link: "https://example.com/item1"
+            name: "Andrea",
+            last_name: "Chico",
+            email: "andchico@yahoo.com",
+            year_of_birth: 1993,
+            level: "Beginner",
+            park: "Weston Regional Park"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioFitness.png",
-            tags: ["tag5", "tag2"],
-            link: "https://example.com/item1"
+            name: "Ari",
+            last_name: "Pe",
+            email: "makeithappen2023@hotmail.com",
+            year_of_birth: 1982,
+            level: "Beginner",
+            park: "Need Suggestions"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioDesignBusiness.png",
-            tags: ["tag2", "tag3"],
-            link: "https://example.com/item1"
+            name: "Arleen",
+            last_name: "Rodriguez",
+            email: "trumpcondo@aol.com",
+            year_of_birth: 1975,
+            level: "Beginner",
+            park: "Need Suggestions"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioNailsBusiness.png",
-            tags: ["tag3", "tag4"],
-            link: "https://example.com/item1"
+            name: "Arturo",
+            last_name: "Garzon",
+            email: "arturo2009futbol@hotmail.com",
+            year_of_birth: 1965,
+            level: "Beginner",
+            park: "Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-videos.png",
-            tags: ["tag5", "tag4"],
-            link: "https://example.com/item1"
+            name: "Cesar",
+            last_name: "Sanchez",
+            email: "cecisam1@hotmail.com",
+            year_of_birth: 1972,
+            level: "Beginner",
+            park: "Weston Regional Park, Markham Park, Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioTennis.png",
-            tags: ["tag2", "tag3"],
-            link: "https://example.com/item1"
+            name: "Miguel",
+            last_name: "Sancho",
+            email: "sanchojaf",
+            year_of_birth: 1980,
+            level: "Advanced",
+            park: "Weston Regional Park, Markham Park, Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-audioAndDonation.png",
-            tags: ["tag5", "tag2"],
-            link: "https://example.com/item1"
+            name: "Andrea",
+            last_name: "Culberson",
+            email: "andyculberson@me.com",
+            year_of_birth: 1946,
+            level: "Beginner",
+            park: "Weston Regional Park"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-customHotelBusiness.png",
-            tags: ["Business", "Gallery", "Multimedia", "Body & Care"],
-            link: "https://example.com/item1"
+            name: "Andrea",
+            last_name: "Chico",
+            email: "andchico@yahoo.com",
+            year_of_birth: 1993,
+            level: "Beginner",
+            park: "Weston Regional Park"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-businessMango.png",
-            tags: ["tag5", "tag2"],
-            link: "https://example.com/item1"
+            name: "Ari",
+            last_name: "Pe",
+            email: "makeithappen2023@hotmail.com",
+            year_of_birth: 1982,
+            level: "Beginner",
+            park: "Need Suggestions"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-donationAndGallery.png",
-            tags: ["tag2", "tag3"],
-            link: "https://example.com/item1"
+            name: "Arleen",
+            last_name: "Rodriguez",
+            email: "trumpcondo@aol.com",
+            year_of_birth: 1975,
+            level: "Beginner",
+            park: "Need Suggestions"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-customCosmeticBusiness.png",
-            tags: ["tag3", "tag4"],
-            link: "https://example.com/item1"
+            name: "Arturo",
+            last_name: "Garzon",
+            email: "arturo2009futbol@hotmail.com",
+            year_of_birth: 1965,
+            level: "Beginner",
+            park: "Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-video.png",
-            tags: ["tag5", "tag4"],
-            link: "https://example.com/item1"
+            name: "Cesar",
+            last_name: "Sanchez",
+            email: "cecisam1@hotmail.com",
+            year_of_birth: 1972,
+            level: "Beginner",
+            park: "Weston Regional Park, Markham Park, Bonaventure TC Club"
         },
         {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioCoffeeBusiness2.png",
-            tags: ["Link-in-bio", "Business", "Coffee Shops"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioCoffeeBusiness3.png",
-            tags: ["tag5", "tag2"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioCoffeeBusiness1.png",
-            tags: ["tag3", "tag4"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioModel.png",
-            tags: ["tag5", "tag3"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-socialsClimateActivist.png",
-            tags: ["tag2", "tag4"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-audioMattDj.png",
-            tags: ["tag5", "tag2"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-businessPizza.png",
-            tags: ["tag2", "tag3"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-smartLabelToolsBox.png",
-            tags: ["tag3", "tag4"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-linkInBioDancer.png",
-            tags: ["Link-in-bio", "Social Networks", "Empowered Woman", "Health"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-vcardPlus.png",
-            tags: ["tag2", "tag3"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-businessCars.png",
-            tags: ["Business", "Gallery", "Multimedia"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-productWater.png",
-            tags: ["tag3", "tag4"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/kHiziG.png",
-            tags: ["tag5", "tag4"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-petIdMilo.png",
-            tags: ["Pet Tag ID", "vCard Plus"],
-            link: "https://example.com/item1"
-        },
-        {
-            imageUrl: "https://s-pages.s3.amazonaws.com/sample-businessBrushstrokesStudio.png",
-            tags: ["Link-in-bio", "Social Networks", "Business", "Gallery", "Multimedia", "Art & Design"],
-            link: "https://example.com/item1"
+            name: "Miguel",
+            last_name: "Sancho",
+            email: "sanchojaf",
+            year_of_birth: 1980,
+            level: "Advanced",
+            park: "Weston Regional Park, Markham Park, Bonaventure TC Club"
         }
     ];
 
-    const gridContainer = document.getElementById("gridContainer");
-    const tagFilters = document.querySelectorAll(".tag-filter");
+    const playerGrid = document.getElementById('player-grid');
 
-    // Function to filter items based on the selected tag
-    function filterItems(tag) {
-        // Remove the 'active' class from all tag filters
-        tagFilters.forEach((filter) => {
-            filter.classList.remove("active");
-        });
+    // Function to generate the player cards
+    function generatePlayerCards() {
+        playerGrid.innerHTML = '';
 
-        // Add the 'active' class to the selected tag filter
-        const selectedFilter = document.querySelector(`[data-tag="${tag}"]`);
-        selectedFilter.classList.add("active");
+        const filterLevel = document.getElementById('filter-level').value;
+        const filterPark = document.getElementById('filter-park').value;
+        const filterAge = document.getElementById('filter-age').value;
+        const searchQuery = document.getElementById('search-input').value.toLowerCase();
 
-        gridContainer.innerHTML = ""; // Clear the grid container
+        players.forEach(function (player) {
+            const name = player.name.toLowerCase();
+            const lastName = player.last_name.toLowerCase();
+            const email = player.email.toLowerCase();
 
-        // Filter items based on the selected tag or show all items if tag is "all"
-        const filteredItems = tag === "all" ? items : items.filter((item) => item.tags.includes(tag));
-
-        // Generate grid items for the filtered items
-        filteredItems.forEach((item) => {
-            const iphoneContainer = document.createElement("div");
-            iphoneContainer.classList.add("iphone-container");
-
-            const iphoneScreen = document.createElement("div");
-            iphoneScreen.classList.add("iphone-screen");
-
-            const imageContainer = document.createElement("div");
-            imageContainer.classList.add("image-container");
-
-            iphoneContainer.addEventListener("mouseenter", function () {
-                iphoneContainer.classList.add("glosh");
-            });
-
-            iphoneContainer.addEventListener("mouseleave", function () {
-                iphoneContainer.classList.remove("glosh");
-            });
-
-            const imageLink = document.createElement("a");
-            imageLink.href = item.link;
-
-            const image = document.createElement("img");
-            image.classList.add("iphone-image");
-            image.src = item.imageUrl;
-            image.alt = "iPhone Image";
-
-            image.addEventListener("mouseenter", function () {
-                image.classList.add("lighting");
-            });
-
-            image.addEventListener("mouseleave", function () {
-                image.classList.remove("lighting");
-            });
-
-            const linkContainer = document.createElement("div");
-            linkContainer.classList.add("link-container");
-            linkContainer.textContent = item.link;
-
-            imageLink.appendChild(image);
-            imageContainer.appendChild(imageLink);
-            iphoneScreen.appendChild(imageContainer);
-            iphoneContainer.appendChild(iphoneScreen);
-            iphoneContainer.appendChild(linkContainer);
-            gridContainer.appendChild(iphoneContainer);
+            if (
+                (filterLevel === 'All' || player.level === filterLevel) &&
+                (filterPark === 'All' || player.park === filterPark) &&
+                (filterAge === 'All' || checkAgeRange(player.year_of_birth, filterAge)) &&
+                (searchQuery === '' ||
+                    name.includes(searchQuery) ||
+                    lastName.includes(searchQuery) ||
+                    email.includes(searchQuery))
+            ) {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.innerHTML = `
+              <h3><i class="fas fa-user"></i> ${player.name} ${player.last_name}</h3>
+              <p><i class="fas fa-envelope"></i> ${player.email}</p>
+              <p><i class="fas fa-birthday-cake"></i> Year of Birth: ${player.year_of_birth}</p>
+              <p><i class="fas fa-signal"></i> Level: ${player.level}</p>
+              <p><i class="fas fa-tree"></i> Park: ${player.park}</p>
+            `;
+                playerGrid.appendChild(card);
+            }
         });
     }
 
-    // Event listener for tag filter buttons
-    tagFilters.forEach((filter) => {
-        filter.addEventListener("click", function () {
-            const selectedTag = this.getAttribute("data-tag");
-            filterItems(selectedTag);
-        });
-    });
 
-    // Show all items by default
-    filterItems("all");
+    // Function to check if the player's age falls within the selected range
+    function checkAgeRange(yearOfBirth, filterAge) {
+        const currentYear = new Date().getFullYear();
+        const age = currentYear - yearOfBirth;
+
+        if (filterAge === '<19' && age < 19) {
+            return true;
+        } else if (filterAge === '19-35' && age >= 19 && age <= 35) {
+            return true;
+        } else if (filterAge === '35-55' && age > 35 && age <= 55) {
+            return true;
+        } else if (filterAge === '>55' && age > 55) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // Event listener for filter change
+    const filterSelectLevel = document.getElementById('filter-level');
+    filterSelectLevel.addEventListener('change', generatePlayerCards);
+
+    const filterSelectPark = document.getElementById('filter-park');
+    filterSelectPark.addEventListener('change', generatePlayerCards);
+
+    const filterSelectAge = document.getElementById('filter-age');
+    filterSelectAge.addEventListener('change', generatePlayerCards);
+
+    // Initial generation of player cards
+    generatePlayerCards();
+
+    const resetButton = document.getElementById("reset-filter");
+    resetButton.addEventListener("click", function () {
+        document.getElementById("filter-level").value = "All";
+        document.getElementById("filter-park").value = "All";
+        document.getElementById("filter-age").value = "All";
+
+        generatePlayerCards();
+    });
 });
+
+

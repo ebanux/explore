@@ -1,18 +1,52 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 
 <head>
+  <title>Weston Player Cards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="tag-filters">
-    <button class="tag-filter" data-tag="all">All</button>
-    <button class="tag-filter" data-tag="Link-in-bio">Link in Bio</button>
-    <button class="tag-filter" data-tag="Smart Label">Smart Label</button>
-    <button class="tag-filter" data-tag="Gallery">Gallery</button>
+  <div class="main-area">
+    <h1>Weston Player Cards</h1>
+
+    <div class="filter-area">
+      <label for="filter-level"><i class="fas fa-signal"></i> Filter by Level:</label>
+      <select id="filter-level">
+        <option value="All">All</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+
+      <label for="filter-park"><i class="fas fa-tree"></i> Filter by Park:</label>
+      <select id="filter-park">
+        <option value="All">All</option>
+        <option value="Weston Regional Park">Weston Regional Park</option>
+        <option value="Bonaventure TC Club">Bonaventure TC Club</option>
+        <!-- Add other park options here -->
+      </select>
+
+      <label for="filter-age"><i class="fas fa-birthday-cake"></i> Filter by Age Range:</label>
+      <select id="filter-age">
+        <option value="All">All</option>
+        <option value="<19">&lt; 19</option>
+        <option value="19-35">19 - 35</option>
+        <option value="35-55">35 - 55</option>
+        <option value=">55">&gt; 55</option>
+      </select>
+
+      <label for="search-input"><i class="fas fa-search"></i> Search:</label>
+      <input type="text" id="search-input">
+      <button id="reset-filter">Reset</button>
+    </div>
+
+    <div id="player-grid"></div>
+
   </div>
-  <div class="grid-container" id="gridContainer"></div>
+
   <script src="script.js"></script>
 </body>
 
