@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Yarn
+yarn.lock
+.pnp/
+.pnp.js
+yarn-integrity
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and testing files
+*.log
+__pycache__/
+*.swp
+*.swo
+*.pyc
+
+# Dependency directories
+/.pnp
+.pnp.js
+.pnp.cjs
+.cache/
+.cached/
+# Yarn v2
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/build-state.yml
+!.yarn/install-state.gz
+# Yarn v3
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/build-state.yml
+!.yarn/install-state.gz
+
+# Output directories
+/build
+/dist
+/out
+
