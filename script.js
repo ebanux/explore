@@ -16017,7 +16017,7 @@ document.addEventListener('DOMContentLoaded', function () {
         players.forEach(function (player) {
             const name = player.name.toLowerCase();
             const lastName = player.last_name.toLowerCase();
-            const email = player.email.toLowerCase();
+            // const email = player.email.toLowerCase();
 
             if (
                 (filterLevel === 'All' || player.level === filterLevel) &&
@@ -16025,14 +16025,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 (filterAge === 'All' || checkAgeRange(player.year_of_birth, filterAge)) &&
                 (searchQuery === '' ||
                     name.includes(searchQuery) ||
-                    lastName.includes(searchQuery) ||
-                    email.includes(searchQuery))
+                    lastName.includes(searchQuery))
             ) {
                 const card = document.createElement('div');
                 card.classList.add('card');
                 card.innerHTML = `
               <h3><i class="fas fa-user"></i> ${player.name} ${player.last_name}</h3>
-              <p><i class="fas fa-envelope"></i> ${player.email}</p>
               <p><i class="fas fa-birthday-cake"></i> Year of Birth: ${player.year_of_birth}</p>
               <p><i class="fas fa-signal"></i> Level: ${player.level}</p>
               <p><i class="fas fa-tree"></i> Park: ${player.park}</p>
