@@ -1117,7 +1117,7 @@ const players = [
     },
     {
         "id": "78",
-        "first_name": "\u2022\u2022\u2022\u2022  Anne",
+        "first_name": "Anne",
         "last_name": "Efros",
         "email": "ATEfros@gmail.com",
         "birthyear": "1955",
