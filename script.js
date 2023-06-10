@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Player data array
+
     const players = [
         {
             "id": "115",
@@ -1319,6 +1319,29 @@ document.addEventListener('DOMContentLoaded', function () {
         const filterAge = document.getElementById('filter-age').value;
         const searchQuery = document.getElementById('search-input').value.toLowerCase();
 
+        // Sort options
+        const sortOption = document.getElementById('sort-by').value;
+        const sortAscending = document.getElementById('sort-order').value === 'ascending';
+
+        // Apply sorting
+        players.sort((a, b) => {
+            if (sortOption === 'firstName') {
+                return a.first_name.localeCompare(b.first_name);
+            } else if (sortOption === 'lastName') {
+                return a.last_name.localeCompare(b.last_name);
+            } else if (sortOption === 'age') {
+                return a.birthyear - b.birthyear;
+            } else if (sortOption === 'level') {
+                return a.current_playing_level.localeCompare(b.current_playing_level);
+            } else {
+                return 0;
+            }
+        });
+
+        if (!sortAscending) {
+            players.reverse();
+        }
+
         players.forEach(function (player) {
             const firstName = player.first_name.toLowerCase();
             const lastName = player.last_name.toLowerCase();
@@ -1326,9 +1349,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const level = player.current_playing_level.slice(1, -1).replaceAll('"', '');
             const birthyear = (invalidYearOfBirth(player.birthyear)) ? '-' : player.birthyear;
 
-            if (level != "Advanced" && level != "Intermediate" && level != "Beginner") {
-                debugger;
-            }
             if (
                 (filterLevel === 'All' || level === filterLevel) &&
                 (filterPark === 'All' || park === filterPark) &&
@@ -1386,6 +1406,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const filterSelectAge = document.getElementById('filter-age');
     filterSelectAge.addEventListener('change', generatePlayerCards);
+
+    // Sort options event listeners
+    const sortOption = document.getElementById('sort-by');
+    const sortOrder = document.getElementById('sort-order');
+    sortOption.addEventListener('change', generatePlayerCards);
+    sortOrder.addEventListener('change', generatePlayerCards);
 
     // Initial generation of player cards
     generatePlayerCards();

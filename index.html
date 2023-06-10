@@ -13,45 +13,68 @@
     <h1>Weston Player Cards</h1>
 
     <div class="filter-area">
-      <label for="filter-level"><i class="fas fa-signal"></i> Filter by Level:</label>
-      <select id="filter-level">
-        <option value="All">All</option>
-        <option value="Beginner">Beginner</option>
-        <option value="Intermediate">Intermediate</option>
-        <option value="Advanced">Advanced</option>
-      </select>
+      <div class="filter-group">
+        <label for="filter-level"><i class="fas fa-signal"></i> Level:</label>
+        <select id="filter-level">
+          <option value="All">All</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </div>
 
-      <label for="filter-park"><i class="fas fa-tree"></i> Filter by Park:</label>
-      <select id="filter-park">
-        <option value="All">All</option>
-        <option value="Weston Regional Park">Weston Regional Park</option>
-        <option value="Bonaventure TC Club">Bonaventure TC Club</option>
-        <option value="Weston Midtown Athetic Club">Weston Midtown Athetic Club</option>
-        <option value="Weston Racket Club">Weston Racket Club</option>
+      <div class="filter-group">
+        <label for="filter-park"><i class="fas fa-tree"></i> Park:</label>
+        <select id="filter-park">
+          <option value="All">All</option>
+          <option value="Weston Regional Park">Weston Regional Park</option>
+          <option value="Bonaventure TC Club">Bonaventure TC Club</option>
+          <option value="Weston Midtown Athetic Club">Weston Midtown Athetic Club</option>
+          <option value="Weston Racket Club">Weston Racket Club</option>
+          <!-- Add other park options here -->
+        </select>
+      </div>
 
+      <div class="filter-group">
+        <label for="filter-age"><i class="fas fa-birthday-cake"></i> Age Range:</label>
+        <select id="filter-age">
+          <option value="All">All</option>
+          <option value="<19">&lt; 19</option>
+          <option value="19-35">19 - 35</option>
+          <option value="35-55">35 - 55</option>
+          <option value=">55">&gt; 55</option>
+        </select>
+      </div>
 
-        <!-- Add other park options here -->
-      </select>
+      <div class="filter-group">
+        <label for="search-input"><i class="fas fa-search"></i> Search:</label>
+        <input type="text" id="search-input">
+        <button id="reset-filter">Reset</button>
+      </div>
 
-      <label for="filter-age"><i class="fas fa-birthday-cake"></i> Filter by Age Range:</label>
-      <select id="filter-age">
-        <option value="All">All</option>
-        <option value="<19">&lt; 19</option>
-        <option value="19-35">19 - 35</option>
-        <option value="35-55">35 - 55</option>
-        <option value=">55">&gt; 55</option>
-      </select>
+      <div class="sort-area">
+        <div class="sort-group">
+          <label for="sort-by"><i class="fas fa-sort"></i> Sort by:</label>
+          <select id="sort-by">
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+            <option value="age">Age</option>
+            <option value="level">Level</option>
+          </select>
+        </div>
 
-      <label for="search-input"><i class="fas fa-search"></i> Search:</label>
-      <input type="text" id="search-input">
-      <button id="reset-filter">Reset</button>
-    </div>
+        <div class="sort-group">
+          <label for="sort-order">Sort order:</label>
+          <select id="sort-order">
+            <option value="ascending">Ascending</option>
+            <option value="descending">Descending</option>
+          </select>
+        </div>
+      </div>
 
-    <div id="player-grid"></div>
+      <div id="player-grid"></div>
 
-  </div>
-
-  <script src="script.js"></script>
+      <script src="script.js"></script>
 </body>
 
 </html>

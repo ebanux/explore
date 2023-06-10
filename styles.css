@@ -51,6 +51,20 @@
     margin-top: 0;
 }
 
+/* .filter-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+} */
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
 #reset-filter {
     background-color: #ddd;
     border: none;
@@ -61,4 +75,17 @@
 
 #reset-filter:hover {
     background-color: #ccc;
+}
+
+.sort-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
