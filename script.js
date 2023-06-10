@@ -1324,10 +1324,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const lastName = player.last_name.toLowerCase();
             const park = player.favourite_court_locaton.slice(1, -1).split(",").join(", ").replaceAll('"', '');
             const level = player.current_playing_level.slice(1, -1).replaceAll('"', '');
+            const birthyear = (invalidYearOfBirth(player.birthyear)) ? '-' : player.birthyear;
 
+            if (level != "Advanced" && level != "Intermediate" && level != "Beginner") {
+                debugger;
+            }
             if (
-                (filterLevel === 'All' || player.level === filterLevel) &&
-                (filterPark === 'All' || player.park === filterPark) &&
+                (filterLevel === 'All' || level === filterLevel) &&
+                (filterPark === 'All' || park === filterPark) &&
                 (filterAge === 'All' || checkAgeRange(player.birthyear, filterAge)) &&
                 (searchQuery === '' ||
                     firstName.includes(searchQuery) ||
@@ -1337,7 +1341,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 card.classList.add('card');
                 card.innerHTML = `
               <h3><i class="fas fa-user"></i> ${player.first_name} ${player.last_name}</h3>
-              <p><i class="fas fa-birthday-cake"></i> Year of Birth: ${player.birthyear}</p>
+              <p><i class="fas fa-birthday-cake"></i> Year of Birth: ${birthyear}</p>
               <p><i class="fas fa-signal"></i> Level: ${level}</p>
               <p><i class="fas fa-tree"></i> Park: ${park}</p>
             `;
@@ -1346,10 +1350,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function invalidYearOfBirth(age) {
+        const currentYear = new Date().getFullYear();
+        if (age < 1920 || age > currentYear)
+            return true;
+        return false;
+    }
 
     // Function to check if the player's age falls within the selected range
     function checkAgeRange(yearOfBirth, filterAge) {
         const currentYear = new Date().getFullYear();
+        if (invalidYearOfBirth(yearOfBirth))
+            return false;
         const age = currentYear - yearOfBirth;
 
         if (filterAge === '<19' && age < 19) {
