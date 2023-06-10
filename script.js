@@ -1374,7 +1374,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        cardCountElement.textContent = `Total Cards: ${playerCount}`;
+        cardCountElement.textContent = `Total Players: ${playerCount}`;
 
         return playerCount;
     }
