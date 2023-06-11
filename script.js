@@ -1254,7 +1254,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="card-front">
     <div class="column-logo">
         <div class="card-logo">
-            <img src="https://user-images.githubusercontent.com/4213488/244941853-40c03871-6c56-4733-af9e-b72e8cdb50f9.png" alt="Card Logo">
+            <img src="https://github.com/ebanux/explore/assets/4213488/c131ba2c-0e70-410c-b075-ec5a33c0b196" alt="Card Logo">
         </div>
     </div>
     <div class="card-name">${player.first_name} ${player.last_name}</div>

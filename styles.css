@@ -110,11 +110,11 @@ body {
 .card-member {
     width: 360px;
     height: 220px;
-    background-color: rgba(29, 29, 54, 1);
+    background-color: #51c3c32b;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    color: #ffffff;
+    color: #100f0f;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
