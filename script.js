@@ -1252,7 +1252,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 card.classList.add('card');
                 card.innerHTML = `
                 <h2 class="flex items-center text-lg font-bold mb-4"><i class="fas fa-user mr-2"></i> ${player.first_name} ${player.last_name}</h2>
-                <p class="flex items-center"><i class="fas fa-birthday-cake mr-2"></i><b> Year of Birth: </b>&nbsp; ${birthyear}</p>
+                <p class="flex items-center"><i class="fas fa-birthday-cake mr-2"></i><b> Birthyear: </b>&nbsp; ${birthyear}</p>
                 <p class="flex items-center"><i class="fas fa-signal mr-2"></i><b> Level: </b>&nbsp; ${level}</p>
                 <p class="flex"><i class="fas fa-tree mr-2"></i><b> Park: </b>&nbsp; ${park}</p>
             `;
