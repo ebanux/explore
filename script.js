@@ -1394,13 +1394,19 @@ document.addEventListener('DOMContentLoaded', function () {
             return false;
         const age = currentYear - yearOfBirth;
 
-        if (filterAge === '<19' && age < 19) {
+        if (filterAge === '<19' && age <= 19) {
             return true;
-        } else if (filterAge === '19-35' && age >= 19 && age <= 35) {
+        } else if (filterAge === '20-34' && age >= 30 && age <= 34) {
             return true;
-        } else if (filterAge === '35-55' && age > 35 && age <= 55) {
+        } else if (filterAge === '35-49' && age > 35 && age <= 49) {
             return true;
-        } else if (filterAge === '>55' && age > 55) {
+        } else if (filterAge === '50-59' && age > 50 && age <= 59) {
+            return true;
+        } else if (filterAge === '60-69' && age > 60 && age <= 69) {
+            return true;
+        } else if (filterAge === '70-79' && age > 70 && age <= 79) {
+            return true;
+        } else if (filterAge === '>80' && age >= 80) {
             return true;
         } else {
             return false;

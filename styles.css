@@ -40,6 +40,7 @@ body {
 
 .filter-area {
     margin: 20px;
+    color: blue;
 }
 
 /* Rest of the CSS code remains the same */
@@ -77,13 +78,15 @@ body {
 #reset-filter {
     background-color: #ddd;
     border: none;
-    color: #333;
+    background-color: blue;
+    color: aquamarine;
     padding: 8px 16px;
     cursor: pointer;
 }
 
 #reset-filter:hover {
-    background-color: #ccc;
+    color: blue;
+    background-color: aquamarine;
 }
 
 .sort-area {
