@@ -1364,10 +1364,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 const card = document.createElement('div');
                 card.classList.add('card');
                 card.innerHTML = `
-              <h3><i class="fas fa-user"></i> ${player.first_name} ${player.last_name}</h3>
-              <p><i class="fas fa-birthday-cake"></i> Year of Birth: ${birthyear}</p>
-              <p><i class="fas fa-signal"></i> Level: ${level}</p>
-              <p><i class="fas fa-tree"></i> Park: ${park}</p>
+                <h2 class="flex items-center text-lg font-bold mb-4"><i class="fas fa-user mr-2"></i> ${player.first_name} ${player.last_name}</h2>
+                <p class="flex items-center"><i class="fas fa-birthday-cake mr-2"></i><b> Year of Birth: </b>&nbsp; ${birthyear}</p>
+                <p class="flex items-center"><i class="fas fa-signal mr-2"></i><b> Level: </b>&nbsp; ${level}</p>
+                <p class="flex"><i class="fas fa-tree mr-2"></i><b> Park: </b>&nbsp; ${park}</p>
             `;
                 playerGrid.appendChild(card);
                 playerCount++;
@@ -1382,7 +1382,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function invalidYearOfBirth(age) {
         const currentYear = new Date().getFullYear();
-        if (age < 1920 || age > currentYear)
+        if (age < 1920 || age > (currentYear - 3))
             return true;
         return false;
     }
