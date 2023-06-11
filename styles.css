@@ -56,7 +56,11 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 5%;
 }
+
+
 
 .card h4 {
     margin-top: 0;
@@ -100,4 +104,107 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+
+.card-member {
+    width: 360px;
+    height: 220px;
+    background-color: rgba(29, 29, 54, 1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin-bottom: 30px;
+}
+
+.card-member.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    margin-left: -40px;
+}
+
+.card-member .card-name {
+    font-size: 24px;
+}
+
+.card-member .card-number {
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+    text-align: right;
+    margin-right: 40px;
+}
+
+.card-member .card-logo {
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.card-member .card-logo img {
+    /* width: 120px; */
+}
+
+.card-member .info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.card-member .info-container .column {
+    width: 80%;
+    margin-right: 40px;
+}
+
+.column-logo {
+    position: absolute;
+    margin-left: 230px;
+    width: 30%;
+}
+
+.card-member .info-container .column-label {
+    width: 25%;
+}
+
+.card-member .info-container .column-label .info-label {
+    font-size: 16px;
+    /* margin-bottom: 5px; */
+    text-align: right;
+    margin-right: 10px;
+}
+
+.card-member .info-container .column .info-value {
+    font-size: 16px;
+    /* margin-bottom: 7px; */
+}
+
+.info-club {
+    position: absolute;
+    bottom: 20px;
+    /* width: 100%; */
+    text-align: center;
+    margin-left: 35px;
 }

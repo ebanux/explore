@@ -13,96 +13,99 @@
 </head>
 
 <body>
+  <div class=".container">
 
-  <div class="main-area">
+    <div class="main-area">
 
-    <h1 class="text-5xl font-bold mb-8">Weston Pickleball Club Directory</h1>
-    <div class="flex space-x-4">
-      <div class="w-2/3">
-        <div class="filter-area">
-          <div class="filter-column">
-            <div class="filter-group flex items-center mb-4">
-              <label for="filter-level" class="mr-2"><i class="fas fa-signal"></i><b> Level </b></label>
-              <select id="filter-level" class="border border-gray-300 rounded px-2 py-1">
-                <option value="All">All</option>
-                <option value="Beginner">Beginner</option>
-                <option value="Intermediate">Intermediate</option>
-                <option value="Advanced">Advanced</option>
-              </select>
-            </div>
-
-            <div class="filter-group flex items-center mb-4">
-              <label for="filter-park" class="mr-2"><i class="fas fa-tree"></i><b> Park </b></label>
-              <select id="filter-park" class="border border-gray-300 rounded px-2 py-1">
-                <option value="All">All</option>
-                <option value="Weston Regional Park">Weston Regional Park</option>
-                <option value="Bonaventure TC Club">Bonaventure TC Club</option>
-                <option value="Weston Midtown Athetic Club">Weston Midtown Athetic Club</option>
-                <option value="Weston Racket Club">Weston Racket Club</option>
-                <!-- Add other park options here -->
-              </select>
-            </div>
-
-            <div class="filter-group flex items-center mb-4">
-              <label for="filter-age" class="mr-2"><i class="fas fa-birthday-cake"></i><b> Age Range </b></label>
-              <select id="filter-age" class="border border-gray-300 rounded px-2 py-1">
-                <option value="All">All</option>
-                <option value="<19">Under 19</option>
-                <option value="20-34">20 - 34</option>
-                <option value="35-49">35 - 49</option>
-                <option value="50-59">50 - 59</option>
-                <option value="60-69">60 - 69</option>
-                <option value="70-79">70 - 79</option>
-                <option value=">80">80 +</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="filter-column">
-            <div class="filter-group flex items-center mb-4">
-              <label for="search-input" class="mr-2"><i class="fas fa-search"></i><b> Search </b></label>
-              <input type="text" id="search-input" class="border border-gray-300 rounded px-2 py-1">
-              <button id="reset-filter" class="rounded px-4 py-1 ml-2">Reset</button>
-            </div>
-
-            <div class="sort-area flex items-center mb-4">
-              <div class="sort-group flex items-center mr-4">
-                <label for="sort-by" class="mr-2"><i class="fas fa-sort"></i><b> Sort by </b></label>
-                <select id="sort-by" class="border border-gray-300 rounded px-2 py-1">
-                  <option value="firstName">First Name</option>
-                  <option value="lastName">Last Name</option>
-                  <option value="age">Age</option>
-                  <option value="level">Level</option>
+      <h1 class="text-5xl font-bold mb-8">Weston Pickleball Club Directory</h1>
+      <div class="flex space-x-4">
+        <div class="w-2/3">
+          <div class="filter-area">
+            <div class="filter-column">
+              <div class="filter-group flex items-center mb-4">
+                <label for="filter-level" class="mr-2"><i class="fas fa-signal"></i><b> Level </b></label>
+                <select id="filter-level" class="border border-gray-300 rounded px-2 py-1">
+                  <option value="All">All</option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Advanced">Advanced</option>
                 </select>
               </div>
 
-              <div class="sort-group flex items-center">
-                <label for="sort-order" class="mr-2"><b>Sort order</b></label>
-                <select id="sort-order" class="border border-gray-300 rounded px-2 py-1">
-                  <option value="ascending">Ascending</option>
-                  <option value="descending">Descending</option>
+              <div class="filter-group flex items-center mb-4">
+                <label for="filter-park" class="mr-2"><i class="fas fa-tree"></i><b> Park </b></label>
+                <select id="filter-park" class="border border-gray-300 rounded px-2 py-1">
+                  <option value="All">All</option>
+                  <option value="Weston Regional Park">Weston Regional Park</option>
+                  <option value="Bonaventure TC Club">Bonaventure TC Club</option>
+                  <option value="Weston Midtown Athetic Club">Weston Midtown Athetic Club</option>
+                  <option value="Weston Racket Club">Weston Racket Club</option>
+                  <!-- Add other park options here -->
+                </select>
+              </div>
+
+              <div class="filter-group flex items-center mb-4">
+                <label for="filter-age" class="mr-2"><i class="fas fa-birthday-cake"></i><b> Age Range </b></label>
+                <select id="filter-age" class="border border-gray-300 rounded px-2 py-1">
+                  <option value="All">All</option>
+                  <option value="<19">Under 19</option>
+                  <option value="20-34">20 - 34</option>
+                  <option value="35-49">35 - 49</option>
+                  <option value="50-59">50 - 59</option>
+                  <option value="60-69">60 - 69</option>
+                  <option value="70-79">70 - 79</option>
+                  <option value=">80">80 +</option>
                 </select>
               </div>
             </div>
 
+            <div class="filter-column">
+              <div class="filter-group flex items-center mb-4">
+                <label for="search-input" class="mr-2"><i class="fas fa-search"></i><b> Search </b></label>
+                <input type="text" id="search-input" class="border border-gray-300 rounded px-2 py-1">
+                <button id="reset-filter" class="rounded px-4 py-1 ml-2">Reset</button>
+              </div>
+
+              <div class="sort-area flex items-center mb-4">
+                <div class="sort-group flex items-center mr-4">
+                  <label for="sort-by" class="mr-2"><i class="fas fa-sort"></i><b> Sort by </b></label>
+                  <select id="sort-by" class="border border-gray-300 rounded px-2 py-1">
+                    <option value="firstName">First Name</option>
+                    <option value="lastName">Last Name</option>
+                    <option value="age">Age</option>
+                    <option value="level">Level</option>
+                  </select>
+                </div>
+
+                <div class="sort-group flex items-center">
+                  <label for="sort-order" class="mr-2"><b>Sort order</b></label>
+                  <select id="sort-order" class="border border-gray-300 rounded px-2 py-1">
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+            <h2 class="font-bold" id="card-count">0</h2>
           </div>
-          <h2 class="font-bold" id="card-count">0</h2>
         </div>
-      </div>
-      <div class="w-1/3 flex justify-end">
-        <div class="logo-image hidden sm:block"">
+        <div class="w-1/3 flex justify-end">
+          <div class="logo-image hidden sm:block"">
           <img
             src=" https://user-images.githubusercontent.com/4213488/244898916-91e976de-83b1-46fe-9f02-f9733941d643.png"
-          alt="Logo" class="max-w-full max-h-32">
+            alt="Logo" class="max-w-full max-h-32">
+          </div>
         </div>
       </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="player-grid"></div>
     </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4" id="player-grid"></div>
-
+  </div>
 
 
-    <script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
