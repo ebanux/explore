@@ -480,14 +480,6 @@ const players = [
         "current_playing_level": "[\"Advanced\"]"
     },
     {
-        "id": "202",
-        "first_name": "Ronald",
-        "last_name": "Bolivar",
-        "birthyear": "1975",
-        "favourite_court_locaton": "[\"Weston Regional Park\"]",
-        "current_playing_level": "[\"Beginner\"]"
-    },
-    {
         "id": "81",
         "first_name": "Alex",
         "last_name": "Munoz",
@@ -1406,14 +1398,6 @@ const players = [
         "birthyear": "",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
         "current_playing_level": "[\"Intermediate\"]"
-    },
-    {
-        "id": "205",
-        "first_name": "Alex",
-        "last_name": "Munoz",
-        "birthyear": "1975",
-        "favourite_court_locaton": "[\"Weston Regional Park\"]",
-        "current_playing_level": "[\"Beginner\",\"Intermediate\"]"
     },
     {
         "id": "175",
