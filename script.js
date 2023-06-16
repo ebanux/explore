@@ -85,7 +85,7 @@ const players = [
         "last_name": "Abels",
         "birthyear": "1961",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
-        "current_playing_level": "[\"Advanced\",\"Certified Instructor\"]"
+        "current_playing_level": "[\"Certified Instructor\"]"
     },
     {
         "id": "237",
@@ -416,6 +416,14 @@ const players = [
         "current_playing_level": "[\"Advanced\"]"
     },
     {
+        "id": "238",
+        "first_name": "Heidi",
+        "last_name": "Donofrio",
+        "birthyear": "1969",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
         "id": "223",
         "first_name": "Alfredo",
         "last_name": "Pons",
@@ -630,6 +638,14 @@ const players = [
         "birthyear": "2006",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
         "current_playing_level": "[\"Beginner\"]"
+    },
+    {
+        "id": "243",
+        "first_name": "Carmen",
+        "last_name": "Sorvill",
+        "birthyear": "1960",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
     },
     {
         "id": "121",
@@ -880,6 +896,14 @@ const players = [
         "current_playing_level": "[\"Advanced\"]"
     },
     {
+        "id": "239",
+        "first_name": "Rick",
+        "last_name": "Basinger",
+        "birthyear": "1958",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
         "id": "47",
         "first_name": "Patricia",
         "last_name": "Calderon",
@@ -894,6 +918,14 @@ const players = [
         "birthyear": "1966",
         "favourite_court_locaton": "[\"Need Suggestions\"]",
         "current_playing_level": "[\"Beginner\"]"
+    },
+    {
+        "id": "244",
+        "first_name": "Tomas",
+        "last_name": "Heredia",
+        "birthyear": "1998",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
     },
     {
         "id": "22",
@@ -1024,6 +1056,14 @@ const players = [
         "current_playing_level": "[\"Intermediate\"]"
     },
     {
+        "id": "241",
+        "first_name": "Ronaldo",
+        "last_name": "Hauser",
+        "birthyear": "1948",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
         "id": "203",
         "first_name": "Roberto",
         "last_name": "Echeverria",
@@ -1101,14 +1141,6 @@ const players = [
         "last_name": "May",
         "birthyear": "1962",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
-        "current_playing_level": "[\"Intermediate\"]"
-    },
-    {
-        "id": "220",
-        "first_name": "Hauser",
-        "last_name": "Ronaldo",
-        "birthyear": "1948",
-        "favourite_court_locaton": "[\"Weston Regional Park\",\"Weston Racket Club\"]",
         "current_playing_level": "[\"Intermediate\"]"
     },
     {
@@ -1272,6 +1304,14 @@ const players = [
         "current_playing_level": "[\"Intermediate\"]"
     },
     {
+        "id": "240",
+        "first_name": "KELLY",
+        "last_name": "WILLIAMS",
+        "birthyear": "1964",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
         "id": "125",
         "first_name": "William",
         "last_name": "Stalhuth",
@@ -1420,6 +1460,14 @@ const players = [
         "first_name": "Tie",
         "last_name": "Qian",
         "birthyear": "1964",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
+        "id": "242",
+        "first_name": "Laura",
+        "last_name": "Morales",
+        "birthyear": "1999",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
         "current_playing_level": "[\"Intermediate\"]"
     },
