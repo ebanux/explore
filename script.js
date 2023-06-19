@@ -96,6 +96,14 @@ const players = [
         "current_playing_level": "[\"Certified Instructor\"]"
     },
     {
+        "id": "266",
+        "first_name": "Giacomo",
+        "last_name": "Tenace",
+        "birthyear": "1953",
+        "favourite_court_locaton": "[\"Bonaventure TC Club\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
         "id": "237",
         "first_name": "Rafael",
         "last_name": "Zornosa",
@@ -176,6 +184,14 @@ const players = [
         "current_playing_level": "[\"Intermediate\"]"
     },
     {
+        "id": "256",
+        "first_name": "Iliana",
+        "last_name": "Cardentey",
+        "birthyear": "1967",
+        "favourite_court_locaton": "[\"Need Suggestions\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
         "id": "123",
         "first_name": "Mario",
         "last_name": "Sandino",
@@ -190,6 +206,14 @@ const players = [
         "birthyear": "1972",
         "favourite_court_locaton": "[\"Weston Regional Park\",\"Weston Racket Club\",\"Bonaventure TC Club\",\"Weston Midtown Athetic Club\"]",
         "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
+        "id": "264",
+        "first_name": "Amanda",
+        "last_name": "Budejen",
+        "birthyear": "2004",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
     },
     {
         "id": "169",
@@ -350,6 +374,22 @@ const players = [
         "birthyear": "1971",
         "favourite_court_locaton": "[\"Weston Regional Park\",\"Bonaventure TC Club\"]",
         "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
+        "id": "255",
+        "first_name": "Leilani",
+        "last_name": "Baumanis",
+        "birthyear": "1966",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
+        "id": "261",
+        "first_name": "H\u00e9ctor",
+        "last_name": "Budejen",
+        "birthyear": "1965",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
     },
     {
         "id": "41",
@@ -576,6 +616,14 @@ const players = [
         "current_playing_level": "[\"Advanced\"]"
     },
     {
+        "id": "254",
+        "first_name": "Steven",
+        "last_name": "Zaffos",
+        "birthyear": "1963",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
         "id": "81",
         "first_name": "Alex",
         "last_name": "Munoz",
@@ -620,6 +668,14 @@ const players = [
         "first_name": "Jose",
         "last_name": "Fuentes",
         "birthyear": "1974",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
+        "id": "260",
+        "first_name": "Egidio",
+        "last_name": "Romano",
+        "birthyear": "1943",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
         "current_playing_level": "[\"Beginner\"]"
     },
@@ -1208,6 +1264,14 @@ const players = [
         "current_playing_level": "[\"Intermediate\",\"Advanced\"]"
     },
     {
+        "id": "258",
+        "first_name": "Lisa",
+        "last_name": "Romano",
+        "birthyear": "1972",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
         "id": "171",
         "first_name": "Arturo",
         "last_name": "Valery",
@@ -1278,6 +1342,14 @@ const players = [
         "birthyear": "2001",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
         "current_playing_level": "[\"Beginner\"]"
+    },
+    {
+        "id": "257",
+        "first_name": "Claudio",
+        "last_name": "Romano",
+        "birthyear": "1990",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\",\"Advanced\"]"
     },
     {
         "id": "247",
@@ -1392,6 +1464,22 @@ const players = [
         "current_playing_level": "[\"Intermediate\"]"
     },
     {
+        "id": "262",
+        "first_name": "Roman",
+        "last_name": "Pinsky",
+        "birthyear": "1959",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
+        "id": "265",
+        "first_name": "Nicol\u00e1s",
+        "last_name": "Budejen",
+        "birthyear": "2009",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
+    },
+    {
         "id": "5",
         "first_name": "Keith",
         "last_name": "Lawson",
@@ -1494,6 +1582,14 @@ const players = [
         "birthyear": "1967",
         "favourite_court_locaton": "[\"Weston Regional Park\",\"Markham Park\"]",
         "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
+        "id": "263",
+        "first_name": "\u00d3scar",
+        "last_name": "Budejen",
+        "birthyear": "1962",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Beginner\"]"
     },
     {
         "id": "24",
@@ -1776,6 +1872,14 @@ const players = [
         "current_playing_level": "[\"Beginner\"]"
     },
     {
+        "id": "259",
+        "first_name": "Adam",
+        "last_name": "Schildkraut",
+        "birthyear": "1970",
+        "favourite_court_locaton": "[\"Weston Regional Park\",\"Markham Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
         "id": "233",
         "first_name": "Andriy",
         "last_name": "Petrushkevych",
@@ -1804,6 +1908,14 @@ const players = [
         "first_name": "Rebecca Sherry",
         "last_name": "Eshraghi",
         "birthyear": "1971",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Intermediate\"]"
+    },
+    {
+        "id": "253",
+        "first_name": "Val",
+        "last_name": "Zaffos",
+        "birthyear": "1966",
         "favourite_court_locaton": "[\"Weston Regional Park\"]",
         "current_playing_level": "[\"Intermediate\"]"
     },
