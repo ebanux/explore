@@ -1000,6 +1000,14 @@ const players = [
         "current_playing_level": "[\"Beginner\"]"
     },
     {
+        "id": "274",
+        "first_name": "Dana",
+        "last_name": "Reece",
+        "birthyear": "1974",
+        "favourite_court_locaton": "[\"Weston Regional Park\"]",
+        "current_playing_level": "[\"Advanced\"]"
+    },
+    {
         "id": "244",
         "first_name": "Tomas",
         "last_name": "Heredia",
